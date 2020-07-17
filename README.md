@@ -8,3 +8,4 @@ Diseño de una API Rest usando Node.js y Express para ser consumido por cualquie
 ## Características:
 
 - Creación del servidor usando Nodejs y Express.
+- CRUD a un [Array] como base de datos.
