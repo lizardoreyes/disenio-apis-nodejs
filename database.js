@@ -1,5 +1,3 @@
-exports.products = [
-
-]
+exports.products = []
 
 exports.users = []

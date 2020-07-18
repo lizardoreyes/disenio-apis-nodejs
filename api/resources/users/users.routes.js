@@ -7,6 +7,7 @@ const jwt = require("jsonwebtoken")
 const { users } = require('./../../../database');
 const usersRouter = express.Router();
 const {validateUser, validateLogin} = require("./users.validate");
+const config = require('../../../config');
 
 usersRouter.get("/", (req, res) => {
     res.json(users)
@@ -47,7 +48,7 @@ usersRouter.post("/login", validateLogin, (req, res) => {
                 // Generar token
                 let token = jwt.sign({
                     id: users[pos].id
-                }, "clave secreta aqui", { expiresIn: 86400 })
+                }, config.jwt.secret, { expiresIn: config.jwt.expiration })
                 log.info(`Usuario ${username} completo la autenticacion.`)
                 res.json({ token })
             }
