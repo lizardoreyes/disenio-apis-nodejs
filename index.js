@@ -2,13 +2,23 @@ const express = require('express');
 const app = express();
 const bodyParser = require("body-parser");
 const morgan = require("morgan")
+const passport = require("passport");
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb://127.0.0.1:27017/disenio-api-nodejs", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+mongoose.connection.on("error", e => {
+    logger.error("Fallo la conexion a mongodb")
+    process.exit(1)
+})
+
 const productsRouter = require('./api/resources/products/products.routes');
 const usersRouter = require("./api/resources/users/users.routes")
 const config = require("./config")
 const logger = require('./utils/logger');
-const passport = require("passport")
-
-const authJWT = require("./api/libs/auth")
+const authJWT = require("./api/libs/auth");
 
 app.use(morgan("short", {
     stream: {
