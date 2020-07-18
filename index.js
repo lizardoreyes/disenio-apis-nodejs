@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require("body-parser");
 const app = express();
 const productsRouter = require('./api/resources/products/products.route');
+const logger = require('./utils/logger');
+
 
 app.use(bodyParser.json())
 
@@ -14,5 +16,5 @@ app.get("/", (req, res) => {
 
 app.listen(3000, err => {
     if (err) throw new Error(err)
-    console.log("Servidor iniciado en el puerto 3000")
+    logger.info("Servidor iniciado en el puerto 3000")
 })

@@ -3,10 +3,11 @@
 Diseño de una API Rest usando Node.js y Express para ser consumido por cualquier tipo de aplicación, ya se web, mobile o desktop.
 
 ## Versión
-0.0.4
+0.0.6
 
 ## Características:
 
 - Creación del servidor usando Nodejs y Express.
 - CRUD a un [Array] como base de datos.
 - Validación de parametros enviandos a las rutas.
+- Uso de Winston para el registro de logs
