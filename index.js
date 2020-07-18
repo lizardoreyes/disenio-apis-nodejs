@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const bodyParser = require("body-parser");
 const morgan = require("morgan")
-const productsRouter = require('./api/resources/products/products.route');
+const productsRouter = require('./api/resources/products/products.routes');
+const usersRouter = require("./api/resources/users/users.routes")
 const logger = require('./utils/logger');
 const passport = require("passport")
 // Autenticacion basica de username y password
@@ -26,6 +27,7 @@ passport.use(new BasicStrategy((username, password, done) => {
 app.use(passport.initialize())
 
 app.use("/products", productsRouter)
+app.use("/users", usersRouter)
 app.get("/", passport.authenticate("basic", { session:false }), (req, res) => {
     res.send("API funcionando")
 })
