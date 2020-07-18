@@ -3,9 +3,10 @@ const uuid = require('uuid').v4;
 const _ = require("underscore")
 const log = require("../../../utils/logger")
 const bcrypt = require("bcrypt")
+const jwt = require("jsonwebtoken")
 const { users } = require('./../../../database');
 const usersRouter = express.Router();
-const validateUser = require("./users.validate");
+const {validateUser, validateLogin} = require("./users.validate");
 
 usersRouter.get("/", (req, res) => {
     res.json(users)
@@ -26,9 +27,36 @@ usersRouter.post("/", validateUser, (req, res) => {
             return res.status(500).send("Ocurrió un error proceso creación del usuario")
         }
 
-        users.push({username, email, password: hashedPassword})
+        users.push({id: uuid() ,username, email, password: hashedPassword})
         res.status(201).send("Usuario creado exitosamente")
     })
+
+})
+
+usersRouter.post("/login", validateLogin, (req, res) => {
+    const { username, password } = req.body
+    const pos = users.findIndex(user => user.username === username)
+    if (pos === -1) {
+        log.info(`Usuario ${username} no pudo ser autenticado.`)
+        return res.status(400).send("Credenciales incorrectas. El usuario no existe")
+
+    } else {
+        const hashedPassword = users[pos].password
+        bcrypt.compare(password, hashedPassword, (err, equals) => {
+            if (equals) {
+                // Generar token
+                let token = jwt.sign({
+                    id: users[pos].id
+                }, "clave secreta aqui", { expiresIn: 86400 })
+                log.info(`Usuario ${username} completo la autenticacion.`)
+                res.json({ token })
+            }
+            else {
+                log.info(`Usuario ${username} no completo la autenticacion. Contraseña incorrecta`)
+                res.status(400).send("Credenciales incorrectas. Asegurate que el username y password sean correctas.")
+            }
+        })
+    }
 
 })
 
