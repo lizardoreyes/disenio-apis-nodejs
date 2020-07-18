@@ -8,6 +8,7 @@ const logger = require('./utils/logger');
 const passport = require("passport")
 // Autenticacion basica de username y password
 const BasicStrategy = require("passport-http").BasicStrategy
+const auth = require("./api/libs/auth")
 
 app.use(morgan("short", {
     stream: {
@@ -17,13 +18,7 @@ app.use(morgan("short", {
 
 app.use(bodyParser.json())
 
-passport.use(new BasicStrategy((username, password, done) => {
-    if(username.valueOf() === "lizardo" && password.valueOf() === "123") {
-        return done(null, true)
-    } else {
-        return done(null, false)
-    }
-}))
+passport.use(new BasicStrategy(auth))
 app.use(passport.initialize())
 
 app.use("/products", productsRouter)

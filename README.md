@@ -3,7 +3,7 @@
 Diseño de una API Rest usando Node.js y Express para ser consumido por cualquier tipo de aplicación, ya se web, mobile o desktop.
 
 ## Versión
-0.0.9
+0.0.10
 
 ## Características:
 
