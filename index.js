@@ -6,9 +6,8 @@ const productsRouter = require('./api/resources/products/products.routes');
 const usersRouter = require("./api/resources/users/users.routes")
 const logger = require('./utils/logger');
 const passport = require("passport")
-// Autenticacion basica de username y password
-const BasicStrategy = require("passport-http").BasicStrategy
-const auth = require("./api/libs/auth")
+
+const authJWT = require("./api/libs/auth")
 
 app.use(morgan("short", {
     stream: {
@@ -18,12 +17,13 @@ app.use(morgan("short", {
 
 app.use(bodyParser.json())
 
-passport.use(new BasicStrategy(auth))
+passport.use(authJWT)
 app.use(passport.initialize())
 
 app.use("/products", productsRouter)
 app.use("/users", usersRouter)
-app.get("/", passport.authenticate("basic", { session:false }), (req, res) => {
+app.get("/", passport.authenticate("jwt", { session:false }), (req, res) => {
+    logger.info(req.user)
     res.send("API funcionando")
 })
 

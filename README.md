@@ -3,7 +3,7 @@
 Diseño de una API Rest usando Node.js y Express para ser consumido por cualquier tipo de aplicación, ya se web, mobile o desktop.
 
 ## Versión
-0.0.11
+0.0.12
 
 ## Características:
 
@@ -13,4 +13,4 @@ Diseño de una API Rest usando Node.js y Express para ser consumido por cualquie
 - Uso de Winston para el registro de logs.
 - Integracion de morgan con winston para crear logs de los requests.
 - Agregado passport para autenticacion en el sistema.
-Actualizado a autenticacion por tokens
+- Actualizado a autenticacion por tokens con passport.
