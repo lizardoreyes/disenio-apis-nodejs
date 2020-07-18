@@ -22,10 +22,6 @@ app.use(passport.initialize())
 
 app.use("/products", productsRouter)
 app.use("/users", usersRouter)
-app.get("/", passport.authenticate("jwt", { session:false }), (req, res) => {
-    logger.info(req.user)
-    res.send("API funcionando")
-})
 
 app.listen(3000, err => {
     if (err) throw new Error(err)

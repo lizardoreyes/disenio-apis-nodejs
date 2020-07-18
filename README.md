@@ -14,3 +14,5 @@ Diseño de una API Rest usando Node.js y Express para ser consumido por cualquie
 - Integracion de morgan con winston para crear logs de los requests.
 - Agregado passport para autenticacion en el sistema.
 - Actualizado a autenticacion por tokens con passport.
+
+Integrando autenticacion por tokens a las vistas

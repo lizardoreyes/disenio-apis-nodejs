@@ -4,6 +4,7 @@ const { users } = require("../../database")
 const bcrypt = require("bcrypt")
 const passportJWT = require("passport-jwt")
 
+// Authorization: bearer xxxx.yyyy.zzzz
 const jwtOptions = {
     secretOrKey: "clave secreta aqui",
     jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken()
