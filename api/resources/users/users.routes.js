@@ -38,7 +38,7 @@ usersRouter.post("/", [validateUser, transformBodyALowerCase], processErrors((re
         .then(hashedPassword => {
             return userController.createUser(newUser, hashedPassword)
                 .then(user => {
-                    res.status(201).send("Usuario creado exitosamente")
+                    res.status(201).send("Usuario creado exitósamente.")
                 })
         })
 }))

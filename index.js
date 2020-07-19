@@ -43,7 +43,11 @@ if(config.environment === "prod") {
     app.use(errorHandler.errorsDevelopment)
 }
 
-app.listen(config.port, err => {
+const server = app.listen(config.port, err => {
     if (err) throw new Error(err)
     logger.info(`Servidor iniciado en el puerto ${config.port}`)
 })
+
+module.exports = {
+    app, server
+}
