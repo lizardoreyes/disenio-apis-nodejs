@@ -12,8 +12,8 @@ const productSchema = new mongoose.Schema({
     },
     currency: {
         type: String,
-        maxLength: 3,
-        minLength: 3,
+        maxlength: 3,
+        minlength: 3,
         required: [true, "Producto debe tener una moneda"]
     },
     owner: {

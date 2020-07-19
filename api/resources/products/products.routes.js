@@ -6,7 +6,6 @@ const passport = require("passport")
 const productsRouter = express.Router();
 const log = require("../../../utils/logger");
 const productController = require("./products.controller")
-const { products } = require('./../../../database');
 const validateProduct = require("./products.validate")
 const jwtAuthenticated = passport.authenticate("jwt", { session:false })
 

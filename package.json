@@ -25,5 +25,8 @@
         "underscore": "^1.10.2",
         "uuid": "^8.2.0",
         "winston": "^3.3.3"
+    },
+    "devDependencies": {
+        "express-list-endpoints": "^5.0.0"
     }
 }
