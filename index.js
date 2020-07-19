@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan")
 const passport = require("passport");
 const mongoose = require("mongoose");
+const errorHandler = require("./api/libs/errorHandler")
 
 mongoose.connect("mongodb://127.0.0.1:27017/disenio-api-nodejs", {
     useNewUrlParser: true,
@@ -34,6 +35,13 @@ app.use(passport.initialize())
 
 app.use("/products", productsRouter)
 app.use("/users", usersRouter)
+
+app.use(errorHandler.processErrorsDB)
+if(config.environment === "prod") {
+    app.use(errorHandler.errorsProduction)
+} else {
+    app.use(errorHandler.errorsDevelopment)
+}
 
 app.listen(config.port, err => {
     if (err) throw new Error(err)

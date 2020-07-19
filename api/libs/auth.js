@@ -13,7 +13,6 @@ const jwtOptions = {
 }
 
 const jwtStrategy = new passportJWT.Strategy(jwtOptions, (jwtPayload, next) => {
-
     userController.getUser({id: jwtPayload.id})
         .then(user => {
             if(!user) {
