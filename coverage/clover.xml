@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595207128536" clover="3.2.0">
-  <project timestamp="1595207128536" name="All files">
-    <metrics statements="256" coveredstatements="217" conditionals="70" coveredconditionals="43" methods="50" coveredmethods="40" elements="376" coveredelements="300" complexity="0" loc="256" ncloc="256" packages="6" files="16" classes="16"/>
-    <package name="disenio-apis-nodejs">
+<coverage generated="1595211485816" clover="3.2.0">
+  <project timestamp="1595211485816" name="All files">
+    <metrics statements="256" coveredstatements="225" conditionals="70" coveredconditionals="46" methods="50" coveredmethods="41" elements="376" coveredelements="312" complexity="0" loc="256" ncloc="256" packages="6" files="16" classes="16"/>
+    <package name="disenio-api-nodejs">
       <metrics statements="31" coveredstatements="28" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="2"/>
-      <file name="index.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/index.js">
+      <file name="index.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\index.js">
         <metrics statements="31" coveredstatements="28" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -23,7 +23,7 @@
         <line num="22" count="2" type="stmt"/>
         <line num="23" count="2" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
-        <line num="27" count="36" type="stmt"/>
+        <line num="27" count="42" type="stmt"/>
         <line num="31" count="2" type="stmt"/>
         <line num="33" count="2" type="stmt"/>
         <line num="34" count="2" type="stmt"/>
@@ -33,15 +33,15 @@
         <line num="40" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="41" count="0" type="stmt"/>
         <line num="43" count="2" type="stmt"/>
-        <line num="47" count="2" type="stmt"/>
-        <line num="48" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="49" count="2" type="stmt"/>
-        <line num="52" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="47" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="disenio-apis-nodejs.api.libs">
+    <package name="disenio-api-nodejs.api.libs">
       <metrics statements="33" coveredstatements="24" conditionals="12" coveredconditionals="6" methods="8" coveredmethods="6"/>
-      <file name="auth.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/api/libs/auth.js">
+      <file name="auth.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\api\libs\auth.js">
         <metrics statements="16" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -50,40 +50,40 @@
         <line num="6" count="2" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
-        <line num="15" count="7" type="stmt"/>
-        <line num="17" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="17" count="10" type="cond" truecount="1" falsecount="1"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
-        <line num="22" count="7" type="stmt"/>
-        <line num="23" count="7" type="stmt"/>
+        <line num="22" count="10" type="stmt"/>
+        <line num="23" count="10" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
         <line num="34" count="2" type="stmt"/>
       </file>
-      <file name="errorHandler.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/api/libs/errorHandler.js">
+      <file name="errorHandler.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\api\libs\errorHandler.js">
         <metrics statements="17" coveredstatements="12" conditionals="10" coveredconditionals="5" methods="5" coveredmethods="4"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="16" type="stmt"/>
-        <line num="6" count="19" type="stmt"/>
+        <line num="6" count="23" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
-        <line num="11" count="7" type="cond" truecount="3" falsecount="1"/>
+        <line num="11" count="9" type="cond" truecount="3" falsecount="1"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="16" count="7" type="stmt"/>
+        <line num="16" count="9" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
         <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="21" count="0" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
-        <line num="26" count="7" type="cond" truecount="1" falsecount="1"/>
-        <line num="27" count="7" type="stmt"/>
+        <line num="26" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="27" count="9" type="stmt"/>
       </file>
     </package>
-    <package name="disenio-apis-nodejs.api.resources.products">
-      <metrics statements="88" coveredstatements="69" conditionals="18" coveredconditionals="11" methods="18" coveredmethods="12"/>
-      <file name="products.controller.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/api/resources/products/products.controller.js">
+    <package name="disenio-api-nodejs.api.resources.products">
+      <metrics statements="88" coveredstatements="77" conditionals="18" coveredconditionals="14" methods="18" coveredmethods="13"/>
+      <file name="products.controller.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\api\resources\products\products.controller.js">
         <metrics statements="12" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
@@ -91,33 +91,33 @@
         <line num="8" count="2" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
       </file>
-      <file name="products.errors.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/api/resources/products/products.errors.js">
+      <file name="products.errors.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\api\resources\products\products.errors.js">
         <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
       </file>
-      <file name="products.model.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/api/resources/products/products.model.js">
+      <file name="products.model.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\api\resources\products\products.model.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
       </file>
-      <file name="products.routes.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/api/resources/products/products.routes.js">
-        <metrics statements="54" coveredstatements="38" conditionals="12" coveredconditionals="7" methods="9" coveredmethods="6"/>
+      <file name="products.routes.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\api\resources\products\products.routes.js">
+        <metrics statements="54" coveredstatements="46" conditionals="12" coveredconditionals="10" methods="9" coveredmethods="7"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
@@ -129,11 +129,11 @@
         <line num="10" count="2" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
-        <line num="14" count="6" type="stmt"/>
-        <line num="16" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="16" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
         <line num="23" count="2" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
@@ -147,14 +147,14 @@
         <line num="42" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="43" count="1" type="stmt"/>
         <line num="48" count="2" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="57" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="53" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="57" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
         <line num="62" count="0" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
         <line num="64" count="0" type="stmt"/>
@@ -173,42 +173,42 @@
         <line num="84" count="0" type="stmt"/>
         <line num="88" count="2" type="stmt"/>
       </file>
-      <file name="products.validate.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/api/resources/products/products.validate.js">
+      <file name="products.validate.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\api\resources\products\products.validate.js">
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="3" type="stmt"/>
         <line num="15" count="3" type="stmt"/>
         <line num="16" count="3" type="stmt"/>
         <line num="17" count="3" type="stmt"/>
       </file>
     </package>
-    <package name="disenio-apis-nodejs.api.resources.users">
+    <package name="disenio-api-nodejs.api.resources.users">
       <metrics statements="84" coveredstatements="81" conditionals="24" coveredconditionals="21" methods="20" coveredmethods="19"/>
-      <file name="users.controller.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/api/resources/users/users.controller.js">
+      <file name="users.controller.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\api\resources\users\users.controller.js">
         <metrics statements="16" coveredstatements="13" conditionals="6" coveredconditionals="3" methods="7" coveredmethods="6"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
-        <line num="15" count="6" type="stmt"/>
-        <line num="16" count="6" type="stmt"/>
-        <line num="17" count="6" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="22" count="2" type="stmt"/>
-        <line num="23" count="13" type="cond" truecount="2" falsecount="0"/>
-        <line num="24" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="10" type="cond" truecount="1" falsecount="1"/>
         <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="26" count="0" type="stmt"/>
         <line num="29" count="2" type="stmt"/>
       </file>
-      <file name="users.errors.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/api/resources/users/users.errors.js">
+      <file name="users.errors.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\api\resources\users\users.errors.js">
         <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="cond" truecount="2" falsecount="0"/>
@@ -220,13 +220,13 @@
         <line num="15" count="2" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
       </file>
-      <file name="users.model.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/api/resources/users/users.model.js">
+      <file name="users.model.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\api\resources\users\users.model.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
       </file>
-      <file name="users.routes.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/api/resources/users/users.routes.js">
+      <file name="users.routes.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\api\resources\users\users.routes.js">
         <metrics statements="41" coveredstatements="41" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="8"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -240,58 +240,58 @@
         <line num="10" count="2" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
-        <line num="15" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="16" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="17" count="12" type="stmt"/>
+        <line num="15" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="14" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
         <line num="23" count="2" type="stmt"/>
         <line num="27" count="2" type="stmt"/>
-        <line num="28" count="6" type="stmt"/>
-        <line num="29" count="6" type="stmt"/>
-        <line num="31" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="29" count="7" type="stmt"/>
+        <line num="31" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="32" count="2" type="stmt"/>
         <line num="33" count="2" type="stmt"/>
-        <line num="35" count="4" type="stmt"/>
-        <line num="38" count="4" type="stmt"/>
-        <line num="40" count="4" type="stmt"/>
+        <line num="35" count="5" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
         <line num="45" count="2" type="stmt"/>
-        <line num="46" count="6" type="stmt"/>
-        <line num="47" count="6" type="stmt"/>
-        <line num="51" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="7" type="stmt"/>
+        <line num="47" count="7" type="stmt"/>
+        <line num="51" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="52" count="1" type="stmt"/>
         <line num="53" count="1" type="stmt"/>
-        <line num="56" count="5" type="stmt"/>
-        <line num="57" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="59" count="4" type="stmt"/>
-        <line num="62" count="4" type="stmt"/>
-        <line num="63" count="4" type="stmt"/>
+        <line num="56" count="6" type="stmt"/>
+        <line num="57" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="59" count="5" type="stmt"/>
+        <line num="62" count="5" type="stmt"/>
+        <line num="63" count="5" type="stmt"/>
         <line num="66" count="1" type="stmt"/>
         <line num="67" count="1" type="stmt"/>
         <line num="72" count="2" type="stmt"/>
       </file>
-      <file name="users.validate.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/api/resources/users/users.validate.js">
+      <file name="users.validate.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\api\resources\users\users.validate.js">
         <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
-        <line num="11" count="14" type="stmt"/>
-        <line num="12" count="14" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="6" type="stmt"/>
+        <line num="11" count="15" type="stmt"/>
+        <line num="12" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="7" type="stmt"/>
         <line num="15" count="8" type="stmt"/>
         <line num="16" count="8" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
-        <line num="26" count="8" type="stmt"/>
-        <line num="27" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="28" count="6" type="stmt"/>
+        <line num="26" count="9" type="stmt"/>
+        <line num="27" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="7" type="stmt"/>
         <line num="30" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="disenio-apis-nodejs.config">
+    <package name="disenio-api-nodejs.config">
       <metrics statements="13" coveredstatements="8" conditionals="10" coveredconditionals="2" methods="0" coveredmethods="0"/>
-      <file name="index.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/config/index.js">
+      <file name="index.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\config\index.js">
         <metrics statements="12" coveredstatements="7" conditionals="10" coveredconditionals="2" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="3" count="2" type="stmt"/>
@@ -306,20 +306,20 @@
         <line num="26" count="0" type="stmt"/>
         <line num="29" count="2" type="stmt"/>
       </file>
-      <file name="test.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/config/test.js">
+      <file name="test.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\config\test.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="disenio-apis-nodejs.utils">
+    <package name="disenio-api-nodejs.utils">
       <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="logger.js" path="/Users/lizardo/Desktop/nodejs/disenio-apis-nodejs/utils/logger.js">
+      <file name="logger.js" path="D:\programacion\Javascript\Node.js\API-REST\disenio-api-nodejs\utils\logger.js">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
-        <line num="17" count="67" type="stmt"/>
-        <line num="18" count="67" type="stmt"/>
+        <line num="17" count="78" type="stmt"/>
+        <line num="18" count="78" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
         <line num="45" count="2" type="stmt"/>
       </file>

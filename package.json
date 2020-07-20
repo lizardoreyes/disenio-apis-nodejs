@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "nodemon",
-        "test": "SET NODE_ENV=test & jest --runInBand --coverage"
+        "test": "SET NODE_ENV=test& jest --runInBand --coverage"
     },
     "keywords": [],
     "author": "Lizardo Reyes",

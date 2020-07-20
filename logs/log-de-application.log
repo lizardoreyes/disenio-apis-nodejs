@@ -1,0 +1,295 @@
+info: 2020-07-20T02:05:01.260Z Servidor iniciado en el puerto 3000
+info: 2020-07-20T02:05:01.295Z ::ffff:127.0.0.1 - GET /users HTTP/1.1 200 2 - 6.205 ms
+info: 2020-07-20T02:05:01.317Z ::ffff:127.0.0.1 - GET /users HTTP/1.1 200 337 - 2.834 ms
+info: 2020-07-20T02:05:01.387Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 64.800 ms
+info: 2020-07-20T02:05:01.447Z Email [david2@gmail.com] o username [david] ya existen en la base de datos
+info: 2020-07-20T02:05:01.449Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 409 347 - 3.673 ms
+info: 2020-07-20T02:05:01.456Z Email [david@gmail.com] o username [david2] ya existen en la base de datos
+info: 2020-07-20T02:05:01.457Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 409 347 - 1.785 ms
+warn: 2020-07-20T02:05:01.462Z Producto fallo la validación {"0":"\"username\" is required"}
+info: 2020-07-20T02:05:01.463Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 1.844 ms
+warn: 2020-07-20T02:05:01.466Z Producto fallo la validación {"0":"\"password\" is required"}
+info: 2020-07-20T02:05:01.467Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.589 ms
+warn: 2020-07-20T02:05:01.470Z Producto fallo la validación {"0":"\"email\" is required"}
+info: 2020-07-20T02:05:01.471Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.560 ms
+warn: 2020-07-20T02:05:01.480Z Producto fallo la validación {"0":"\"email\" must be a valid email"}
+info: 2020-07-20T02:05:01.480Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.728 ms
+warn: 2020-07-20T02:05:01.485Z Producto fallo la validación {"0":"\"username\" length must be at least 3 characters long"}
+info: 2020-07-20T02:05:01.485Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.592 ms
+warn: 2020-07-20T02:05:01.490Z Producto fallo la validación {"0":"\"username\" length must be less than or equal to 30 characters long"}
+info: 2020-07-20T02:05:01.491Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.675 ms
+warn: 2020-07-20T02:05:01.496Z Producto fallo la validación {"0":"\"password\" length must be at least 6 characters long"}
+info: 2020-07-20T02:05:01.496Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.652 ms
+warn: 2020-07-20T02:05:01.501Z Producto fallo la validación {"0":"\"password\" length must be less than or equal to 200 characters long"}
+info: 2020-07-20T02:05:01.501Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.587 ms
+info: 2020-07-20T02:05:01.558Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 53.264 ms
+info: 2020-07-20T02:05:01.612Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 400 95 - 0.467 ms
+info: 2020-07-20T02:05:01.616Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 400 95 - 0.524 ms
+info: 2020-07-20T02:05:01.621Z Usuario [lizardo124] no existe. No pudo ser autenticado
+info: 2020-07-20T02:05:01.622Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 400 401 - 2.777 ms
+info: 2020-07-20T02:05:01.725Z Usuario lizardo no completo la autenticacion. Contraseña incorrecta
+info: 2020-07-20T02:05:01.726Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 400 328 - 49.917 ms
+info: 2020-07-20T02:05:01.831Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:05:01.832Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 51.980 ms
+info: 2020-07-20T02:05:01.935Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:05:01.935Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 50.996 ms
+info: 2020-07-20T02:05:09.164Z Servidor iniciado en el puerto 3000
+info: 2020-07-20T02:05:09.195Z ::ffff:127.0.0.1 - GET /products/123 HTTP/1.1 400 49 - 2.557 ms
+info: 2020-07-20T02:05:09.215Z ::ffff:127.0.0.1 - GET /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 404 348 - 9.920 ms
+info: 2020-07-20T02:05:09.229Z ::ffff:127.0.0.1 - GET /products/5f14fbd520464391ecce482a HTTP/1.1 200 123 - 2.389 ms
+info: 2020-07-20T02:05:09.303Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 68.217 ms
+info: 2020-07-20T02:05:09.359Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:05:09.360Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 53.582 ms
+info: 2020-07-20T02:05:09.366Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:05:09.368Z Producto agregado a la colección productos {"_id":"5f14fbd520464391ecce482c","title":"Televisor","price":120.23,"currency":"USD","owner":"lizardo","__v":0}
+info: 2020-07-20T02:05:09.369Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 201 112 - 5.709 ms
+info: 2020-07-20T02:05:09.376Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 401 - - 0.848 ms
+info: 2020-07-20T02:05:09.382Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:05:09.383Z El siguiente producto no paso la validación {"currency":"USD","price":120.23}
+info: 2020-07-20T02:05:09.384Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 400 109 - 3.418 ms
+info: 2020-07-20T02:05:09.390Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:05:09.391Z El siguiente producto no paso la validación {"currency":"USD","title":"Televisor"}
+info: 2020-07-20T02:05:09.392Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 400 109 - 3.296 ms
+info: 2020-07-20T02:05:09.398Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:05:09.398Z El siguiente producto no paso la validación {"price":120.23,"title":"Televisor"}
+info: 2020-07-20T02:05:09.399Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 400 112 - 2.002 ms
+info: 2020-07-20T02:05:09.453Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 50.724 ms
+info: 2020-07-20T02:05:09.504Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:05:09.505Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 49.733 ms
+info: 2020-07-20T02:05:09.511Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:05:09.512Z ::ffff:127.0.0.1 - DELETE /products/123 HTTP/1.1 400 49 - 1.413 ms
+info: 2020-07-20T02:05:09.517Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:05:09.518Z Producto con id 5f1439ad1b93d0424422e9c2 no existe. Nada que borrar.
+info: 2020-07-20T02:05:09.519Z ::ffff:127.0.0.1 - DELETE /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 404 388 - 2.334 ms
+info: 2020-07-20T02:05:09.524Z ::ffff:127.0.0.1 - DELETE /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 401 - - 0.216 ms
+info: 2020-07-20T02:05:09.530Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:05:09.531Z Usuario [lizardo] no es dueño del producto con id [5f14fbd520464391ecce4832]. Dueño real es lizardo2. Request no será procesado.
+info: 2020-07-20T02:05:09.532Z ::ffff:127.0.0.1 - DELETE /products/5f14fbd520464391ecce4832 HTTP/1.1 401 455 - 2.520 ms
+info: 2020-07-20T02:11:26.174Z Servidor iniciado en el puerto 3000
+info: 2020-07-20T02:11:26.280Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 74.603 ms
+info: 2020-07-20T02:11:26.338Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:11:26.338Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 53.062 ms
+info: 2020-07-20T02:11:26.349Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:11:26.350Z ::ffff:127.0.0.1 - PUT /products/123 HTTP/1.1 400 49 - 3.741 ms
+info: 2020-07-20T02:12:38.277Z Servidor iniciado en el puerto 3000
+info: 2020-07-20T02:12:38.382Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 76.880 ms
+info: 2020-07-20T02:12:38.441Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:12:38.442Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 54.306 ms
+info: 2020-07-20T02:12:38.451Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:12:38.456Z ::ffff:127.0.0.1 - PUT /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 404 356 - 6.957 ms
+info: 2020-07-20T02:14:33.397Z Servidor iniciado en el puerto 3000
+info: 2020-07-20T02:14:33.502Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 75.594 ms
+info: 2020-07-20T02:14:33.560Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:14:33.561Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 53.091 ms
+info: 2020-07-20T02:14:33.569Z ::ffff:127.0.0.1 - DELETE /products/5f14fe09dfe1733280225317 HTTP/1.1 401 - - 1.094 ms
+info: 2020-07-20T02:15:02.201Z Servidor iniciado en el puerto 3000
+info: 2020-07-20T02:15:02.306Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 75.282 ms
+info: 2020-07-20T02:15:02.364Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:15:02.365Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 52.800 ms
+info: 2020-07-20T02:15:02.373Z ::ffff:127.0.0.1 - PUT /products/5f14fe269f129795489abedf HTTP/1.1 401 - - 1.206 ms
+info: 2020-07-20T02:16:01.585Z Servidor iniciado en el puerto 3000
+info: 2020-07-20T02:16:01.690Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 75.173 ms
+info: 2020-07-20T02:16:01.748Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:16:01.749Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 53.236 ms
+info: 2020-07-20T02:16:01.761Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:16:01.763Z Usuario [lizardo] no es dueño del producto con id [5f14fe615650ee914c439eff]. Dueño real es lizardo2. Request no será procesado.
+info: 2020-07-20T02:16:01.766Z ::ffff:127.0.0.1 - PUT /products/5f14fe615650ee914c439eff HTTP/1.1 401 465 - 8.589 ms
+info: 2020-07-20T02:17:31.539Z Servidor iniciado en el puerto 3000
+info: 2020-07-20T02:17:31.570Z ::ffff:127.0.0.1 - GET /products/123 HTTP/1.1 400 49 - 1.792 ms
+info: 2020-07-20T02:17:31.587Z ::ffff:127.0.0.1 - GET /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 404 348 - 9.689 ms
+info: 2020-07-20T02:17:31.601Z ::ffff:127.0.0.1 - GET /products/5f14febbd6cef75fd89f838b HTTP/1.1 200 123 - 2.410 ms
+info: 2020-07-20T02:17:31.672Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 65.610 ms
+info: 2020-07-20T02:17:31.726Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:17:31.727Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 51.723 ms
+info: 2020-07-20T02:17:31.733Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:17:31.735Z Producto agregado a la colección productos {"_id":"5f14febbd6cef75fd89f838d","title":"Televisor","price":120.23,"currency":"USD","owner":"lizardo","__v":0}
+info: 2020-07-20T02:17:31.736Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 201 112 - 5.208 ms
+info: 2020-07-20T02:17:31.740Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 401 - - 0.499 ms
+info: 2020-07-20T02:17:31.745Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:17:31.746Z El siguiente producto no paso la validación {"currency":"USD","price":120.23}
+info: 2020-07-20T02:17:31.746Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 400 109 - 2.796 ms
+info: 2020-07-20T02:17:31.751Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:17:31.751Z El siguiente producto no paso la validación {"currency":"USD","title":"Televisor"}
+info: 2020-07-20T02:17:31.752Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 400 109 - 1.905 ms
+info: 2020-07-20T02:17:31.757Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:17:31.757Z El siguiente producto no paso la validación {"price":120.23,"title":"Televisor"}
+info: 2020-07-20T02:17:31.757Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 400 112 - 1.891 ms
+info: 2020-07-20T02:17:31.813Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 52.355 ms
+info: 2020-07-20T02:17:31.865Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:17:31.866Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 49.860 ms
+info: 2020-07-20T02:17:31.874Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:17:31.875Z ::ffff:127.0.0.1 - DELETE /products/123 HTTP/1.1 400 49 - 1.992 ms
+info: 2020-07-20T02:17:31.882Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:17:31.883Z Producto con id 5f1439ad1b93d0424422e9c2 no existe. Nada que borrar.
+info: 2020-07-20T02:17:31.884Z ::ffff:127.0.0.1 - DELETE /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 404 388 - 2.851 ms
+info: 2020-07-20T02:17:31.890Z ::ffff:127.0.0.1 - DELETE /products/5f14febbd6cef75fd89f8391 HTTP/1.1 401 - - 0.220 ms
+info: 2020-07-20T02:17:31.898Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:17:31.899Z Usuario [lizardo] no es dueño del producto con id [5f14febbd6cef75fd89f8393]. Dueño real es lizardo2. Request no será procesado.
+info: 2020-07-20T02:17:31.900Z ::ffff:127.0.0.1 - DELETE /products/5f14febbd6cef75fd89f8393 HTTP/1.1 401 455 - 3.063 ms
+info: 2020-07-20T02:17:31.955Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 51.360 ms
+info: 2020-07-20T02:17:32.009Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:17:32.010Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 52.211 ms
+info: 2020-07-20T02:17:32.018Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:17:32.019Z ::ffff:127.0.0.1 - PUT /products/123 HTTP/1.1 400 49 - 1.639 ms
+info: 2020-07-20T02:17:32.025Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:17:32.026Z ::ffff:127.0.0.1 - PUT /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 404 356 - 2.576 ms
+info: 2020-07-20T02:17:32.032Z ::ffff:127.0.0.1 - PUT /products/5f14febcd6cef75fd89f8397 HTTP/1.1 401 - - 0.325 ms
+info: 2020-07-20T02:17:32.039Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:17:32.040Z Usuario [lizardo] no es dueño del producto con id [5f14febcd6cef75fd89f8399]. Dueño real es lizardo2. Request no será procesado.
+info: 2020-07-20T02:17:32.041Z ::ffff:127.0.0.1 - PUT /products/5f14febcd6cef75fd89f8399 HTTP/1.1 401 465 - 2.557 ms
+info: 2020-07-20T02:17:44.409Z Servidor iniciado en el puerto 3000
+info: 2020-07-20T02:17:44.442Z ::ffff:127.0.0.1 - GET /users HTTP/1.1 200 2 - 5.667 ms
+info: 2020-07-20T02:17:44.464Z ::ffff:127.0.0.1 - GET /users HTTP/1.1 200 337 - 2.719 ms
+info: 2020-07-20T02:17:44.531Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 62.829 ms
+info: 2020-07-20T02:17:44.589Z Email [david2@gmail.com] o username [david] ya existen en la base de datos
+info: 2020-07-20T02:17:44.592Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 409 347 - 4.286 ms
+info: 2020-07-20T02:17:44.600Z Email [david@gmail.com] o username [david2] ya existen en la base de datos
+info: 2020-07-20T02:17:44.600Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 409 347 - 1.899 ms
+warn: 2020-07-20T02:17:44.608Z Producto fallo la validación {"0":"\"username\" is required"}
+info: 2020-07-20T02:17:44.608Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 4.312 ms
+warn: 2020-07-20T02:17:44.613Z Producto fallo la validación {"0":"\"password\" is required"}
+info: 2020-07-20T02:17:44.613Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.844 ms
+warn: 2020-07-20T02:17:44.616Z Producto fallo la validación {"0":"\"email\" is required"}
+info: 2020-07-20T02:17:44.617Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.713 ms
+warn: 2020-07-20T02:17:44.620Z Producto fallo la validación {"0":"\"email\" must be a valid email"}
+info: 2020-07-20T02:17:44.621Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.812 ms
+warn: 2020-07-20T02:17:44.625Z Producto fallo la validación {"0":"\"username\" length must be at least 3 characters long"}
+info: 2020-07-20T02:17:44.626Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.810 ms
+warn: 2020-07-20T02:17:44.631Z Producto fallo la validación {"0":"\"username\" length must be less than or equal to 30 characters long"}
+info: 2020-07-20T02:17:44.632Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 1.060 ms
+warn: 2020-07-20T02:17:44.636Z Producto fallo la validación {"0":"\"password\" length must be at least 6 characters long"}
+info: 2020-07-20T02:17:44.637Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.776 ms
+warn: 2020-07-20T02:17:44.641Z Producto fallo la validación {"0":"\"password\" length must be less than or equal to 200 characters long"}
+info: 2020-07-20T02:17:44.641Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.732 ms
+info: 2020-07-20T02:17:44.698Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 52.297 ms
+info: 2020-07-20T02:17:44.751Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 400 95 - 0.447 ms
+info: 2020-07-20T02:17:44.754Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 400 95 - 0.336 ms
+info: 2020-07-20T02:17:44.759Z Usuario [lizardo124] no existe. No pudo ser autenticado
+info: 2020-07-20T02:17:44.760Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 400 401 - 2.522 ms
+info: 2020-07-20T02:17:44.863Z Usuario lizardo no completo la autenticacion. Contraseña incorrecta
+info: 2020-07-20T02:17:44.864Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 400 328 - 50.553 ms
+info: 2020-07-20T02:17:44.968Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:17:44.968Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 50.962 ms
+info: 2020-07-20T02:17:45.070Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:17:45.071Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 49.781 ms
+info: 2020-07-20T02:17:45.717Z Servidor iniciado en el puerto 3000
+info: 2020-07-20T02:17:45.739Z ::ffff:127.0.0.1 - GET /products/123 HTTP/1.1 400 49 - 1.474 ms
+info: 2020-07-20T02:17:45.758Z ::ffff:127.0.0.1 - GET /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 404 348 - 7.498 ms
+info: 2020-07-20T02:17:45.771Z ::ffff:127.0.0.1 - GET /products/5f14fec9eb3a759a48b8e067 HTTP/1.1 200 123 - 2.327 ms
+info: 2020-07-20T02:17:45.836Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 60.256 ms
+info: 2020-07-20T02:17:45.890Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:17:45.891Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 51.547 ms
+info: 2020-07-20T02:17:45.897Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:17:45.899Z Producto agregado a la colección productos {"_id":"5f14fec9eb3a759a48b8e069","title":"Televisor","price":120.23,"currency":"USD","owner":"lizardo","__v":0}
+info: 2020-07-20T02:17:45.900Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 201 112 - 5.810 ms
+info: 2020-07-20T02:17:45.904Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 401 - - 0.490 ms
+info: 2020-07-20T02:17:45.908Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:17:45.909Z El siguiente producto no paso la validación {"currency":"USD","price":120.23}
+info: 2020-07-20T02:17:45.910Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 400 109 - 2.824 ms
+info: 2020-07-20T02:17:45.914Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:17:45.915Z El siguiente producto no paso la validación {"currency":"USD","title":"Televisor"}
+info: 2020-07-20T02:17:45.915Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 400 109 - 2.200 ms
+info: 2020-07-20T02:17:45.920Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:17:45.920Z El siguiente producto no paso la validación {"price":120.23,"title":"Televisor"}
+info: 2020-07-20T02:17:45.921Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 400 112 - 2.299 ms
+info: 2020-07-20T02:17:45.975Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 50.725 ms
+info: 2020-07-20T02:17:46.027Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:17:46.028Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 49.974 ms
+info: 2020-07-20T02:17:46.034Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:17:46.034Z ::ffff:127.0.0.1 - DELETE /products/123 HTTP/1.1 400 49 - 1.658 ms
+info: 2020-07-20T02:17:46.040Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:17:46.041Z Producto con id 5f1439ad1b93d0424422e9c2 no existe. Nada que borrar.
+info: 2020-07-20T02:17:46.042Z ::ffff:127.0.0.1 - DELETE /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 404 388 - 2.857 ms
+info: 2020-07-20T02:17:46.048Z ::ffff:127.0.0.1 - DELETE /products/5f14fecaeb3a759a48b8e06d HTTP/1.1 401 - - 0.200 ms
+info: 2020-07-20T02:17:46.055Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:17:46.056Z Usuario [lizardo] no es dueño del producto con id [5f14fecaeb3a759a48b8e06f]. Dueño real es lizardo2. Request no será procesado.
+info: 2020-07-20T02:17:46.057Z ::ffff:127.0.0.1 - DELETE /products/5f14fecaeb3a759a48b8e06f HTTP/1.1 401 455 - 3.019 ms
+info: 2020-07-20T02:17:46.111Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 51.155 ms
+info: 2020-07-20T02:17:46.163Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:17:46.164Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 50.175 ms
+info: 2020-07-20T02:17:46.174Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:17:46.175Z ::ffff:127.0.0.1 - PUT /products/123 HTTP/1.1 400 49 - 2.272 ms
+info: 2020-07-20T02:17:46.183Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:17:46.185Z ::ffff:127.0.0.1 - PUT /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 404 356 - 3.900 ms
+info: 2020-07-20T02:17:46.190Z ::ffff:127.0.0.1 - PUT /products/5f14fecaeb3a759a48b8e073 HTTP/1.1 401 - - 0.326 ms
+info: 2020-07-20T02:17:46.197Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:17:46.198Z Usuario [lizardo] no es dueño del producto con id [5f14fecaeb3a759a48b8e075]. Dueño real es lizardo2. Request no será procesado.
+info: 2020-07-20T02:17:46.199Z ::ffff:127.0.0.1 - PUT /products/5f14fecaeb3a759a48b8e075 HTTP/1.1 401 465 - 3.022 ms
+info: 2020-07-20T02:18:03.880Z Servidor iniciado en el puerto 3000
+info: 2020-07-20T02:18:03.915Z ::ffff:127.0.0.1 - GET /users HTTP/1.1 200 2 - 5.927 ms
+info: 2020-07-20T02:18:03.937Z ::ffff:127.0.0.1 - GET /users HTTP/1.1 200 337 - 2.857 ms
+info: 2020-07-20T02:18:04.004Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 62.957 ms
+info: 2020-07-20T02:18:04.065Z Email [david2@gmail.com] o username [david] ya existen en la base de datos
+info: 2020-07-20T02:18:04.067Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 409 347 - 4.057 ms
+info: 2020-07-20T02:18:04.074Z Email [david@gmail.com] o username [david2] ya existen en la base de datos
+info: 2020-07-20T02:18:04.075Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 409 347 - 1.607 ms
+warn: 2020-07-20T02:18:04.079Z Producto fallo la validación {"0":"\"username\" is required"}
+info: 2020-07-20T02:18:04.080Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 1.622 ms
+warn: 2020-07-20T02:18:04.083Z Producto fallo la validación {"0":"\"password\" is required"}
+info: 2020-07-20T02:18:04.083Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.534 ms
+warn: 2020-07-20T02:18:04.086Z Producto fallo la validación {"0":"\"email\" is required"}
+info: 2020-07-20T02:18:04.087Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.494 ms
+warn: 2020-07-20T02:18:04.089Z Producto fallo la validación {"0":"\"email\" must be a valid email"}
+info: 2020-07-20T02:18:04.090Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.608 ms
+warn: 2020-07-20T02:18:04.094Z Producto fallo la validación {"0":"\"username\" length must be at least 3 characters long"}
+info: 2020-07-20T02:18:04.094Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.615 ms
+warn: 2020-07-20T02:18:04.099Z Producto fallo la validación {"0":"\"username\" length must be less than or equal to 30 characters long"}
+info: 2020-07-20T02:18:04.099Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.603 ms
+warn: 2020-07-20T02:18:04.104Z Producto fallo la validación {"0":"\"password\" length must be at least 6 characters long"}
+info: 2020-07-20T02:18:04.104Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.542 ms
+warn: 2020-07-20T02:18:04.108Z Producto fallo la validación {"0":"\"password\" length must be less than or equal to 200 characters long"}
+info: 2020-07-20T02:18:04.108Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 400 222 - 0.495 ms
+info: 2020-07-20T02:18:04.163Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 51.236 ms
+info: 2020-07-20T02:18:04.216Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 400 95 - 0.445 ms
+info: 2020-07-20T02:18:04.219Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 400 95 - 0.335 ms
+info: 2020-07-20T02:18:04.223Z Usuario [lizardo124] no existe. No pudo ser autenticado
+info: 2020-07-20T02:18:04.224Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 400 401 - 2.199 ms
+info: 2020-07-20T02:18:04.325Z Usuario lizardo no completo la autenticacion. Contraseña incorrecta
+info: 2020-07-20T02:18:04.326Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 400 328 - 49.772 ms
+info: 2020-07-20T02:18:04.431Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:18:04.431Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 52.883 ms
+info: 2020-07-20T02:18:04.533Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:18:04.533Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 49.379 ms
+info: 2020-07-20T02:18:05.082Z Servidor iniciado en el puerto 3000
+info: 2020-07-20T02:18:05.110Z ::ffff:127.0.0.1 - GET /products/123 HTTP/1.1 400 49 - 1.593 ms
+info: 2020-07-20T02:18:05.124Z ::ffff:127.0.0.1 - GET /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 404 348 - 7.527 ms
+info: 2020-07-20T02:18:05.136Z ::ffff:127.0.0.1 - GET /products/5f14feddb95d1b899836a8b0 HTTP/1.1 200 123 - 2.258 ms
+info: 2020-07-20T02:18:05.200Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 58.692 ms
+info: 2020-07-20T02:18:05.255Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:18:05.255Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 52.398 ms
+info: 2020-07-20T02:18:05.261Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:18:05.264Z Producto agregado a la colección productos {"_id":"5f14feddb95d1b899836a8b2","title":"Televisor","price":120.23,"currency":"USD","owner":"lizardo","__v":0}
+info: 2020-07-20T02:18:05.264Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 201 112 - 5.497 ms
+info: 2020-07-20T02:18:05.268Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 401 - - 0.477 ms
+info: 2020-07-20T02:18:05.272Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:18:05.273Z El siguiente producto no paso la validación {"currency":"USD","price":120.23}
+info: 2020-07-20T02:18:05.273Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 400 109 - 2.494 ms
+info: 2020-07-20T02:18:05.277Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:18:05.277Z El siguiente producto no paso la validación {"currency":"USD","title":"Televisor"}
+info: 2020-07-20T02:18:05.278Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 400 109 - 1.795 ms
+info: 2020-07-20T02:18:05.282Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:18:05.282Z El siguiente producto no paso la validación {"price":120.23,"title":"Televisor"}
+info: 2020-07-20T02:18:05.283Z ::ffff:127.0.0.1 - POST /products HTTP/1.1 400 112 - 1.702 ms
+info: 2020-07-20T02:18:05.336Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 51.011 ms
+info: 2020-07-20T02:18:05.388Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:18:05.388Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 49.454 ms
+info: 2020-07-20T02:18:05.394Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:18:05.394Z ::ffff:127.0.0.1 - DELETE /products/123 HTTP/1.1 400 49 - 1.525 ms
+info: 2020-07-20T02:18:05.400Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:18:05.401Z Producto con id 5f1439ad1b93d0424422e9c2 no existe. Nada que borrar.
+info: 2020-07-20T02:18:05.402Z ::ffff:127.0.0.1 - DELETE /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 404 388 - 2.622 ms
+info: 2020-07-20T02:18:05.407Z ::ffff:127.0.0.1 - DELETE /products/5f14feddb95d1b899836a8b6 HTTP/1.1 401 - - 0.202 ms
+info: 2020-07-20T02:18:05.415Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:18:05.416Z Usuario [lizardo] no es dueño del producto con id [5f14feddb95d1b899836a8b8]. Dueño real es lizardo2. Request no será procesado.
+info: 2020-07-20T02:18:05.416Z ::ffff:127.0.0.1 - DELETE /products/5f14feddb95d1b899836a8b8 HTTP/1.1 401 455 - 2.695 ms
+info: 2020-07-20T02:18:05.471Z ::ffff:127.0.0.1 - POST /users HTTP/1.1 201 29 - 51.942 ms
+info: 2020-07-20T02:18:05.522Z Usuario lizardo completo la autenticacion.
+info: 2020-07-20T02:18:05.523Z ::ffff:127.0.0.1 - POST /users/login HTTP/1.1 200 183 - 49.424 ms
+info: 2020-07-20T02:18:05.530Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:18:05.530Z ::ffff:127.0.0.1 - PUT /products/123 HTTP/1.1 400 49 - 1.562 ms
+info: 2020-07-20T02:18:05.535Z Usuario lizardo suministro un token valido. Autenticación completada.
+info: 2020-07-20T02:18:05.537Z ::ffff:127.0.0.1 - PUT /products/5f1439ad1b93d0424422e9c2 HTTP/1.1 404 356 - 2.385 ms
+info: 2020-07-20T02:18:05.541Z ::ffff:127.0.0.1 - PUT /products/5f14feddb95d1b899836a8bc HTTP/1.1 401 - - 0.306 ms
+info: 2020-07-20T02:18:05.547Z Usuario lizardo suministro un token valido. Autenticación completada.
+warn: 2020-07-20T02:18:05.549Z Usuario [lizardo] no es dueño del producto con id [5f14feddb95d1b899836a8be]. Dueño real es lizardo2. Request no será procesado.
+info: 2020-07-20T02:18:05.549Z ::ffff:127.0.0.1 - PUT /products/5f14feddb95d1b899836a8be HTTP/1.1 401 465 - 2.491 ms
