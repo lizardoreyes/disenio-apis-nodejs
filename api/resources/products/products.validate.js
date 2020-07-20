@@ -4,7 +4,7 @@ const log = require("../../../utils/logger");
 const blueprintProduct = Joi.object({
     title: Joi.string().max(100).required(),
     price: Joi.number().positive().precision(2).required(),
-    currency: Joi.string().length(3).uppercase()
+    currency: Joi.string().length(3).uppercase().required()
 })
 
 module.exports = (req, res, next) => {

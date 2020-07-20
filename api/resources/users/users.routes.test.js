@@ -1,6 +1,7 @@
 const request = require("supertest")
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const mongoose = require("mongoose");
 
 const User = require("./users.model")
 const { app, server } = require("../../../index")
@@ -54,14 +55,15 @@ async function usuarioNoExiste(user, done) {
 describe("Usuarios", () => {
     // Antes de cada test
     beforeEach(done => {
-        User.remove({}, err => {
+        User.deleteMany({}, err => {
             done()
         })
     })
 
     // Despues que todos los tests hayan sido ejecutados
-    afterAll(() => {
+    afterAll(async () => {
         server.close()
+        await mongoose.disconnect()
     })
 
     describe("GET /users", () => {

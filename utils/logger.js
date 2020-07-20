@@ -1,4 +1,5 @@
 const winston = require('winston');
+const config = require("../config");
 
 /*  Winston
     https://github.com/winstonjs/winston/blob/master/docs/transports.md
@@ -28,7 +29,7 @@ const logger = winston.createLogger({
             )
         }),
         new winston.transports.File({
-            level: "info",
+            level: config.suprimirLogs ? "error" : "debug",
             handleExceptions: true,
             format: winston.format.combine(
                 includeDate(),

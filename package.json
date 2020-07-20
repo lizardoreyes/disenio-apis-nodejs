@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "nodemon",
-        "test": "jest --forceExit"
+        "test": "SET NODE_ENV=test & jest --runInBand --coverage"
     },
     "keywords": [],
     "author": "Lizardo Reyes",
@@ -30,5 +30,11 @@
     "devDependencies": {
         "jest": "^26.1.0",
         "supertest": "^4.0.2"
+    },
+    "jest": {
+        "testPathIgnorePatterns": [
+            "/config/"
+        ],
+        "testEnvironment": "node"
     }
 }

@@ -15,7 +15,7 @@ const validateId = (req, res, next) => {
     const { id } = req.params
     // Regex para asegurarnos que se pase un id correcto
     if(id.match(/^[a-fA-F0-9]{24}$/) === null) {
-        res.status(401).send(`El id [${id}] suministrado en el URL no es válido.`)
+        res.status(400).send(`El id [${id}] suministrado en el URL no es válido.`)
         return
     }
     next()
