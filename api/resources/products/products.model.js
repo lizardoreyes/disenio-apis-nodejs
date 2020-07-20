@@ -19,6 +19,9 @@ const productSchema = new mongoose.Schema({
     owner: {
         type: String,
         required: [true, "Producto debe estas asociado a un usuario"]
+    },
+    image: {
+        type: String
     }
 })
 

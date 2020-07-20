@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595211485816" clover="3.2.0">
-  <project timestamp="1595211485816" name="All files">
+<coverage generated="1595219336807" clover="3.2.0">
+  <project timestamp="1595219336808" name="All files">
     <metrics statements="256" coveredstatements="225" conditionals="70" coveredconditionals="46" methods="50" coveredmethods="41" elements="376" coveredelements="312" complexity="0" loc="256" ncloc="256" packages="6" files="16" classes="16"/>
     <package name="disenio-api-nodejs">
       <metrics statements="31" coveredstatements="28" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="2"/>

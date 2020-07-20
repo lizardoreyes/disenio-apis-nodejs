@@ -5,10 +5,11 @@ const passport = require("passport")
 const productsRouter = express.Router();
 const log = require("../../../utils/logger");
 const productController = require("./products.controller")
-const validateProduct = require("./products.validate")
+const {validateDataProduct, validarImagenDelProducto} = require("./products.validate")
 const jwtAuthenticated = passport.authenticate("jwt", { session:false })
 const { processErrors } = require("../../libs/errorHandler")
 const { ProductoNoExiste, UsuarioNoEsDueño } = require("./products.errors")
+const { guardarImagen } = require("../../data/images.controller")
 
 const validateId = (req, res, next) => {
     const { id } = req.params
@@ -27,7 +28,7 @@ productsRouter.get("/", processErrors((req, res) => {
         })
 }))
 
-productsRouter.post("/", [jwtAuthenticated, validateProduct], processErrors((req, res) => {
+productsRouter.post("/", [jwtAuthenticated, validateDataProduct], processErrors((req, res) => {
     return productController.createProduct(req.body, req.user.username)
         .then(product => {
             log.info("Producto agregado a la colección productos", product.toObject())
@@ -45,7 +46,7 @@ productsRouter.get("/:id", validateId, processErrors((req, res) => {
 }))
 
 // Reemplazamos totalmente un producto
-productsRouter.put("/:id", [jwtAuthenticated, validateId, validateProduct] , processErrors(async (req, res) => {
+productsRouter.put("/:id", [jwtAuthenticated, validateId, validateDataProduct] , processErrors(async (req, res) => {
     const { id } = req.params
     const { username } = req.user
 
@@ -83,6 +84,23 @@ productsRouter.delete("/:id", [jwtAuthenticated, validateId], processErrors(asyn
     log.info(`Producto con id [${id}] fue borrado.`)
     res.json(productDelete)
 
+}))
+
+// Enviamos un archivo binario de tipo imagen
+productsRouter.put("/:id/image", [jwtAuthenticated, validateId, validarImagenDelProducto], processErrors(async (req, res) => {
+    const { id } = req.params
+    const { username } = req.user
+
+    log.info(`Request recibido de usuario [${username}] para guardar la imagen de producto con id [${id}]`)
+
+    const fileName = `${uuid()}.${req.extension}`
+    await guardarImagen(req.body, fileName)
+
+    const urlImage = `http://s3.amazonaws.com/disenio-api-nodejs/imagenes/${fileName}`
+    const productUpdate = await productController.saveUrlImage(id, urlImage)
+
+    log.info(`Imagen de producto con id [${id}] fue modificado. Link a nueva imagen [${urlImage}]. Cambiado por dueño [${username}]`)
+    res.json(productUpdate)
 }))
 
 module.exports = productsRouter

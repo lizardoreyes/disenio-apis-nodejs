@@ -25,10 +25,15 @@ const deleteProduct = id => {
     return Product.findByIdAndDelete(id)
 }
 
+const saveUrlImage = (id, urlImage) => {
+    return Product.findOneAndUpdate({ _id: id },{ image: urlImage }, { new: true })
+}
+
 module.exports = {
     createProduct,
     getProducts,
     getProduct,
     replaceProduct,
-    deleteProduct
+    deleteProduct,
+    saveUrlImage
 }

@@ -16,6 +16,14 @@ exports.processErrorsDB = (err, req, res, next) => {
     next(err)
 }
 
+exports.processErrorsDelTamañoDelBody = (err, req, res, next) => {
+    if (err.status === 413) {
+        log.error(`Request enviada a la ruta [${req.path}] excedió el límite de tamaño. Request no será procesado.`)
+        err.message = `Èl body enviado en el request a la ruta [${req.path}] pasa el límite de tamaño. Máximo tamaño permitido es ${err.limit} bytes.`
+    }
+    next(err)
+}
+
 exports.errorsProduction = (err, req, res, next) => {
     res.status(err.status || 500)
     res.send({

@@ -3,3 +3,4 @@ logs
 coverage
 .idea
 .gitignore
+.env

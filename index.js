@@ -5,8 +5,9 @@ const morgan = require("morgan")
 const passport = require("passport");
 const mongoose = require("mongoose");
 const errorHandler = require("./api/libs/errorHandler")
+require("dotenv").config()
 
-mongoose.connect("mongodb://127.0.0.1:27017/disenio-api-nodejs", {
+mongoose.connect("mongodb://localhost/disenio-api-nodejs", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
@@ -29,6 +30,7 @@ app.use(morgan("short", {
 }))
 
 app.use(bodyParser.json())
+app.use(bodyParser.raw({ type: "image/*", limit:"1mb" })) // para informacion binaria
 
 passport.use(authJWT)
 app.use(passport.initialize())
@@ -37,6 +39,7 @@ app.use("/products", productsRouter)
 app.use("/users", usersRouter)
 
 app.use(errorHandler.processErrorsDB)
+app.use(errorHandler.processErrorsDelTamañoDelBody)
 if(config.environment === "prod") {
     app.use(errorHandler.errorsProduction)
 } else {
