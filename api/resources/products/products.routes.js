@@ -1,6 +1,5 @@
 const express = require('express');
 const uuid = require('uuid').v4;
-const _ = require("underscore")
 const passport = require("passport")
 
 const productsRouter = express.Router();

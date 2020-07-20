@@ -1,4 +1,3 @@
-const _ = require("underscore")
 const bcrypt = require("bcrypt")
 const passportJWT = require("passport-jwt")
 

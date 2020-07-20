@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "nodemon",
-        "test": "NODE_ENV=test & jest --runInBand --coverage"
+        "test": "SET NODE_ENV=test & jest --runInBand --coverage"
     },
     "keywords": [],
     "author": "Lizardo Reyes",
@@ -15,15 +15,12 @@
         "bcrypt": "^5.0.0",
         "body-parser": "^1.19.0",
         "express": "^4.17.1",
-        "joi": "^17.1.1",
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^5.9.25",
         "morgan": "^1.10.0",
         "nodemon": "^2.0.4",
         "passport": "^0.4.1",
-        "passport-http": "^0.3.0",
         "passport-jwt": "^4.0.0",
-        "underscore": "^1.10.2",
         "uuid": "^8.2.0",
         "winston": "^3.3.3"
     },

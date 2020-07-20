@@ -1,6 +1,5 @@
 const express = require('express');
 const uuid = require('uuid').v4;
-const _ = require("underscore")
 const log = require("../../../utils/logger")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
