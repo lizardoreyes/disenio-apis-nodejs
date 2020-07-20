@@ -50,7 +50,7 @@ usersRouter.post("/login", [validateLogin, transformBodyALowerCase], processErro
     })
 
     if(!userRegistered) {
-        log.error(`Usuario [${userNotAuthenticated.username}] no existe. No pudo ser autenticado`)
+        log.info(`Usuario [${userNotAuthenticated.username}] no existe. No pudo ser autenticado`)
         throw new CredencialesIncorrectas()
     }
 

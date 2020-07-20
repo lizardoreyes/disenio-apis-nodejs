@@ -21,7 +21,7 @@ const includeDate = winston.format(info => {
 const logger = winston.createLogger({
     transports: [
         new winston.transports.Console({
-            level: "debug",
+            level: config.suprimirLogs ? "error" : "debug",
             handleExceptions: true,
             format: winston.format.combine(
                 winston.format.colorize(),
@@ -29,7 +29,7 @@ const logger = winston.createLogger({
             )
         }),
         new winston.transports.File({
-            level: config.suprimirLogs ? "error" : "debug",
+            level: 'info',
             handleExceptions: true,
             format: winston.format.combine(
                 includeDate(),
